@@ -1,0 +1,12 @@
+spring:
+  jackson:
+    time-zone: Asia/Seoul
+  application:
+    name: coupon
+  profiles:
+    active: local
+
+app:
+  logging:
+    enabled: true
+    access-log-enabled: true

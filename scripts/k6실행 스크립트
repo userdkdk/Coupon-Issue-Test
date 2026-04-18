@@ -1,0 +1,6 @@
+docker run --rm -i --network host \
+  -v "$(pwd)":/scripts \
+  -e PRESET=normal \
+  -e EVENT_ID=1 \
+  -e SHARD_COUNT=1 \
+  grafana/k6 run /scripts/coupon_issue_script.js
